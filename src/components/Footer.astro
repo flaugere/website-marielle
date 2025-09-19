@@ -1,0 +1,50 @@
+---
+import { SocialLinks, WebsiteLinks } from '../consts'
+import LogoPNG from '../assets/logo_marielle_pousse.png'
+---
+
+<footer>
+	<div
+		class="app-container grid md:grid-cols-3 gap-12 py-16 border-t-2 border-foreground/50 dark:border-foreground-dark/50"
+	>
+		<div>
+			<a href=`/` aria-label="Accueil">
+				<img src={LogoPNG.src} width={128} alt="Logo" />
+			</a>
+		</div>
+		<div>
+			<h3 class="font-semibold text-2xl">Liens</h3>
+			<div class="flex flex-wrap gap-4 mt-4">
+				{
+					WebsiteLinks.filter((link) => link.name !== 'Home').map((link) => (
+						<a
+							class="text-lg"
+							href={link.url}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							{link.name}
+						</a>
+					))
+				}
+			</div>
+		</div>
+		<div>
+			<h3 class="font-semibold text-2xl">Réseaux</h3>
+			<div class="flex flex-wrap gap-4 mt-4">
+				{
+					SocialLinks.map((link) => (
+						<a
+							class="text-lg"
+							href={link.url}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							{link.name}
+						</a>
+					))
+				}
+			</div>
+		</div>
+	</div>
+</footer>

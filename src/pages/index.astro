@@ -1,0 +1,159 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import { SocialLinks } from '../consts'
+import { Icon } from 'astro-icon/components'
+import SalonJPG from '../assets/massage-room-interior.jpg'
+import ImageLarge from '../assets/image_large.jpg'
+---
+
+<BaseLayout>
+	<main
+		class="app-container flex flex-col gap-12 justify-center py-26 md:py-28 pt-44 md:pt-56 relative"
+	>
+		<div>
+			<p class="block text-2xl opacity-70 mt-9 mb-8 uppercase text-center">
+				Thérapie Psycho-corporelle <br />avec méthode neuro-émotionnelle
+			</p>
+		</div>
+		<div class="flex flex-wrap gap-8">
+			<img src={ImageLarge.src} alt="Salon thérapie" />
+		</div>
+		<main class="texte">
+			<section>
+				<h2
+					class="block text-2xl opacity-70 mt-9 mb-8 uppercase text-center"
+					id="methode"
+				>
+					La méthode
+				</h2>
+				<p class="mt-12">
+					<strong>La méthode neuro-émotionnelle :</strong><br />
+					Elle peut permettre, par l'écoute du corps, une (re) sécurisation du système
+					nerveux.<br />Se libérer de certaines émotions qui, n'ayant pas pu
+					être vécues pleinement, sont restées coincées dans le corps et peuvent
+					chercher à se montrer par des blocages et/ou des douleurs.
+				</p>
+				<br />
+				<p class="mt-12">
+					<strong>Mon rôle lors d'une séance :</strong><br />
+					Avec mes mains, je viens me mettre à l'écoute de ton corps et de ce qu'il
+					est prêt à me montrer à ce moment précis. <br />
+					Je peux donc permettre, dans un cadre sécurisant, un accompagnement des
+					émotions et des insécurités présentes dans ton corps afin qu'elles puissent
+					se vivre pleinement et se libérer.<br />
+				</p>
+				<br />
+				<p class="mt-12">
+					C'est ton corps qui parle, c'est ton corps qui se livre, c'est ton
+					corps qui permet ou non de te faire sentir ces sensations.
+				</p>
+				<br />
+				<p class="mt-12">
+					La méthode, en séance ou en atelier, peut permettre petit à petit de
+					se (re) connecter à soi, à son corps, afin de mieux l'écouter dans ton
+					quotidien.
+				</p>
+			</section>
+			<section>
+				<h2
+					class="block text-2xl opacity-70 mt-9 mb-8 uppercase text-center"
+					id="praticienne"
+				>
+					La praticienne
+				</h2>
+				<p class="mt-12">
+					Je suis Marielle, immensément curieuse du fonctionnement du corps
+					humain et de toutes ses capacités. <br />Après 14 années dans le
+					salariat où j'ai cherché ma voie et ma place, sans jamais les
+					trouver... J'ai senti au plus profond de moi, en découvrant cette
+					méthode, que c'était là ma place.
+					<br />Que c'était là où je devais aller, apprendre, comprendre,
+					pratiquer. Et aujourd'hui, je sais, je sens que c'est juste pour moi
+					d'être ici et de vous proposer cet accompagnement.
+				</p>
+				<p class="mt-12 font-normal">*En formation jusqu'à décembre*</p>
+			</section>
+			<section>
+				<h2
+					class="block text-2xl opacity-70 mt-9 mb-8 uppercase text-center"
+					id="patientes"
+				>
+					LES PATIENT.E.S
+				</h2>
+				<p class="mt-12">
+					Si tu as des difficultés à écouter ton corps, à ressentir tes émotions
+					sans te faire envahir, ou au contraire, à ne pas les ressentir
+					vraiment... Si tu sens qu'au fond de toi il y a quelque chose qui
+					reste, qui te bloque, qui te gêne. Ou simplement, si tu es curieux.se
+					de voir les possibilités de te sentir connecté.e à toi, à ton corps.
+				</p>
+				<p class="mt-12">
+					Tu seras accueilli.e avec amour et bienveillance, dans un espace
+					sécurisé pour toi, pour que tu puisses t'exprimer librement.
+				</p>
+				<p class="mt-12">
+					Chaque part de toi qui a besoin d'être vue et reconnue est la
+					bienvenue ici.
+				</p>
+			</section>
+			<section>
+				<h2
+					class="block text-2xl opacity-70 mt-9 mb-8 uppercase text-center"
+					id="pratiques"
+				>
+					LES PRATIQUES
+				</h2>
+				<strong>La séance : </strong><br />
+				On démarre par un petit moment d'échange, puis on passera sur la table où
+				tu peux t'installer confortablement.
+				<br />Ensuite, je t'inviterai à te déposer simplement et me mettrai à
+				l'écoute de ton corps pour l'accompagner au mieux dans ce qui aura
+				besoin d'être vu à ce moment-là.
+				<p class="mt-12">
+					1h - tarif formation 45€ <br />(valable jusqu'au 31/12/2025)
+				</p>
+				<a
+					class="btn btn-secondary"
+					href="https://calendar.app.google/wCg61zqrGNYgEWQD9"
+					target="_blank">Prendre rendez-vous</a
+				>
+				<br />
+				<p class="mt-12">
+					<strong>L'atelier :</strong>
+					<br />
+					Avec des exercices, tu pourras te mettre à l'écoute de ton propre corps
+					et permettre une reconnexion à toi.
+					<br />Je te guiderais et t'accompagnerai dans ce processus afin que tu
+					puisses y aller avec douceur et bienveillance.
+					<br />Cet atelier peut te permettre, dans ton quotidien, de mieux
+					ressentir ce que ton corps veut te dire.
+					<br />De mieux sentir tes besoins et mieux vivre tes émotions.
+					<br />
+					<br />Groupe de 4 en présentiel.<br />
+					15€ par personne<br />
+					(dates à venir)<br />
+				</p>
+			</section>
+			<section>
+				<h2
+					class="block text-2xl opacity-70 mt-9 mb-8 uppercase text-center"
+					id="contact"
+				>
+					CONTACT
+				</h2>
+				<p class="flex flex-col items-center">
+					<a
+						class="btn btn-secondary"
+						href="https://calendar.app.google/wCg61zqrGNYgEWQD9"
+						target="_blank">Prendre rendez-vous</a
+					>
+					<a href="mailto:contact@mariellepousse.fr" class="mt-4"
+						>contact@mariellepousse.fr</a
+					>
+					<span class="mt-4">20 Grand' Rue - 34800 Ceyras</span>
+					<span>Parking au bout de la rue</span>
+				</p>
+			</section>
+		</main>
+	</main>
+</BaseLayout>
