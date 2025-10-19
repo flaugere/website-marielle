@@ -13,7 +13,7 @@ export const SITE_BASE = ''
 export const SocialLinks = [
 	{
 		name: 'Instagram',
-		url: 'https://instagram.com/mpousse',
+		url: 'https://www.instagram.com/marielle.pousse',
 	},
 ]
 

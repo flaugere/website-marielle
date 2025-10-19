@@ -67,3 +67,17 @@ const { title, description, image = `${SITE_BASE}/saral-og.jpg` } = Astro.props
 	title="Marielle POUSSE RSS Feed"
 	href={new URL('rss.xml', Astro.site)}
 />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HB5PXJM0VJ"
+></script>
+
+<script type="text/plain">
+	window.dataLayer = window.dataLayer || []
+	function gtag() {
+		dataLayer.push(arguments)
+	}
+	gtag('js', new Date())
+
+	gtag('config', 'G-HB5PXJM0VJ')
+</script>
