@@ -15,6 +15,10 @@ export const SocialLinks = [
 		name: 'Instagram',
 		url: 'https://www.instagram.com/marielle.pousse',
 	},
+	{
+		name: 'Facebook',
+		url: 'https://www.facebook.com/profile.php?id=61582456961651',
+	},
 ]
 
 export const WebsiteLinks = [

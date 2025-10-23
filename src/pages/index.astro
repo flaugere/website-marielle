@@ -2,7 +2,8 @@
 import BaseLayout from '../layouts/BaseLayout.astro'
 import { SocialLinks } from '../consts'
 import { Icon } from 'astro-icon/components'
-import SalonJPG from '../assets/massage-room-interior.jpg'
+import FacebookPNG from '../assets/facebook.png'
+import InstagramPNG from '../assets/instagram.png'
 import ImageLarge from '../assets/image_large.jpg'
 ---
 
@@ -157,6 +158,14 @@ import ImageLarge from '../assets/image_large.jpg'
 						href="https://calendar.app.google/wCg61zqrGNYgEWQD9"
 						target="_blank">Prendre rendez-vous</a
 					>
+					<span class="mt-4 flex">
+						<a href={SocialLinks[0].url}>
+							<img src={InstagramPNG.src} width={32} alt="Logo Instagram" />
+						</a>
+						<a href={SocialLinks[1].url} class="ml-4">
+							<img src={FacebookPNG.src} width={32} alt="Logo Facebook" />
+						</a>
+					</span>
 				</p>
 			</section>
 		</main>
