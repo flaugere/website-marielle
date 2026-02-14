@@ -27,8 +27,8 @@ export const WebsiteLinks = [
 		url: '',
 	},
 	{
-		name: 'La méthode',
-		url: '#methode',
+		name: 'Les soins',
+		url: '#soins',
 	},
 	{
 		name: 'La praticienne',
@@ -37,10 +37,6 @@ export const WebsiteLinks = [
 	{
 		name: 'Les patient.e.s',
 		url: '#patientes',
-	},
-	{
-		name: 'Les pratiques',
-		url: '#pratiques',
 	},
 	{
 		name: 'Contact',
