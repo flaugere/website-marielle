@@ -31,12 +31,12 @@ export const WebsiteLinks = [
 		url: '#soins',
 	},
 	{
-		name: 'La praticienne',
-		url: '#praticienne',
-	},
-	{
 		name: 'Les patient.e.s',
 		url: '#patientes',
+	},
+	{
+		name: 'La praticienne',
+		url: '#praticienne',
 	},
 	{
 		name: 'Contact',
