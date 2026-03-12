@@ -31,7 +31,7 @@ export const WebsiteLinks = [
 		url: '#soins',
 	},
 	{
-		name: 'Les patient.e.s',
+		name: 'Les patient·es',
 		url: '#patientes',
 	},
 	{
