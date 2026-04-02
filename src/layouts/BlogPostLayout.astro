@@ -17,7 +17,7 @@ type Props = CollectionEntry<'blog'>['data'] & {
 const {
 	title,
 	description,
-	pubDate,
+	date,
 	updatedDate,
 	coverImageCredit,
 	headings,
@@ -34,14 +34,10 @@ const blogImages = import.meta.glob<{ default: ImageMetadata }>(
 )
 
 const coverImagePath = `/src/assets/blogimages/${slug}/cover.jpg`
-
-const lastModified = dayjs(remarkPluginFrontmatter.lastModified)
-	.utc()
-	.format('D MMM YYYY')
 ---
 
 <BaseLayout title={title} description={description}>
-	<main>
+	<main class="texte">
 		<article>
 			<div
 				class="app-container flex flex-col lg:flex-row-reverse justify-between gap-8 py-24 relative"
@@ -63,7 +59,7 @@ const lastModified = dayjs(remarkPluginFrontmatter.lastModified)
 									name="mdi:calendar-month-outline"
 									class="inline-block text-primary dark:text-primary-dark"
 								/>
-								<FormattedDate date={pubDate} />
+								<FormattedDate date={date} />
 							</span>
 
 							<!-- Updated date -->
@@ -107,24 +103,9 @@ const lastModified = dayjs(remarkPluginFrontmatter.lastModified)
 						}
 					</div>
 					<div
-						class="prose prose-neutral prose-lg md:prose-xl dark:prose-invert prose-img:rounded-xl prose-figure:text-center prose-img:mx-auto"
+						class="prose prose-neutral prose-lg md:prose-xl prose-img:rounded-xl prose-figure:text-center prose-img:mx-auto"
 					>
 						<slot />
-					</div>
-
-					<!-- Suggest edit -->
-					<div class="flex justify-between mt-16 gap-4 flex-wrap italic">
-						<a
-							href={`https://github.com/yashjawale/yashjawale.github.io/edit/main/src/content/blog/${slug}.md`}
-							target="_blank"
-							rel="noopener noreferrer"
-							class="hover:underline underline-offset-4 opacity-70 hover:opacity-100"
-							><Icon name="mdi:pencil-outline" class="inline-block" />
-							Suggest an edit
-						</a>
-						<p class="opacity-70">
-							Last modified: {lastModified}
-						</p>
 					</div>
 				</div>
 			</div>

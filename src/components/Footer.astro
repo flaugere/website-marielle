@@ -1,5 +1,5 @@
 ---
-import { SocialLinks, WebsiteLinks } from '../consts'
+import { SITE_BASE, SocialLinks, WebsiteLinks } from '../consts'
 import LogoPNG from '../assets/logo_marielle_pousse.png'
 ---
 
@@ -19,7 +19,7 @@ import LogoPNG from '../assets/logo_marielle_pousse.png'
 					WebsiteLinks.filter((link) => link.name !== 'Home').map((link) => (
 						<a
 							class="text-lg"
-							href={link.url}
+							href={`${SITE_BASE}/${link.url}`}
 							target="_blank"
 							rel="noopener noreferrer"
 						>
