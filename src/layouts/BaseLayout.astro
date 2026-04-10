@@ -28,6 +28,6 @@ import '@fontsource-variable/jetbrains-mono'
 	>
 		<Navbar title={SITE_TITLE} />
 		<slot />
-		<Footer />
+		{!Astro.url.pathname.startsWith('/linktree') && <Footer />}
 	</body>
 </html>

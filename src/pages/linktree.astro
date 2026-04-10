@@ -1,0 +1,53 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import { SocialLinks } from '../consts'
+import FacebookPNG from '../assets/facebook.png'
+import InstagramPNG from '../assets/instagram.png'
+---
+
+<BaseLayout>
+	<main
+		class="app-container flex flex-col gap-12 justify-center py-26 md:py-28 pt-44 md:pt-28 relative"
+	>
+		<section>
+			<p class="flex flex-col items-center">
+				<a href="/#soins" class="btn btn-secondary">Les soins</a>
+				<a href="/#patientes" class="btn btn-secondary">Les patientes</a>
+				<a
+					class="btn btn-secondary"
+					href="https://calendar.app.google/wCg61zqrGNYgEWQD9"
+					target="_blank">Prendre rendez-vous</a
+				>
+				<span class="mt-10">
+					<a href={SocialLinks[0].url}>
+						<img
+							src={InstagramPNG.src}
+							width={64}
+							alt="Thérapie psychocorporelle - Logo Instagram"
+						/>
+					</a>
+					<a href={SocialLinks[1].url} class="ml-4">
+						<img
+							src={FacebookPNG.src}
+							width={64}
+							alt="Thérapie psychocorporelle - Logo Facebook"
+						/>
+					</a>
+				</span>
+			</p>
+		</section>
+		<section>
+			<p class="flex flex-col items-center">
+				<a href="tel:0650683795">06.50.68.37.95</a>
+				<span>(SMS, appel)</span>
+
+				<a href="mailto:contact@mariellepousse.fr" class="mt-4"
+					>contact@mariellepousse.fr</a
+				>
+				<span class="mt-4">20 Grand' Rue - 34800 Ceyras</span>
+				<span>Accès non PMR</span>
+				<span>Parking au bout de la rue</span>
+			</p>
+		</section>
+	</main>
+</BaseLayout>
