@@ -2,9 +2,9 @@
 // You can import this data from anywhere in your site by using the `import` keyword.
 
 export const SITE_TITLE =
-	'Thérapie Psychocorporelle & Accompagnement Émotionnel | Marielle Pousse - Ceyras (34)'
+	'Thérapie systémique - Hypnose régressive transpersonnelle & médiumnité | Marielle Pousse - Ceyras (34)'
 export const SITE_DESCRIPTION =
-	"Découvrez les soins psychocorporels et l'accompagnement émotionnel proposés à Ceyras (34). Libérez vos blocages, apaisez votre système nerveux et reconnectez-vous à votre corps avec douceur et bienveillance."
+	'Thérapie systémique - Hypnose régressive transpersonnelle & médiumnité. Libérez vos blocages, apaisez votre système nerveux et reconnectez-vous à votre corps avec douceur et bienveillance.'
 
 // If you deploy to a subdirectory, set the `WEBSITE_BASE` here.
 // e.g. '/blog' if you are deploying to example.com/blog
@@ -28,15 +28,15 @@ export const WebsiteLinks = [
 		url: '',
 	},
 	{
-		name: 'Les soins',
-		url: '#soins',
+		name: 'Les prestations',
+		url: '#prestations',
 	},
 	{
-		name: 'Les patient·es',
+		name: 'Pour qui ?',
 		url: '#patientes',
 	},
 	{
-		name: 'La praticienne',
+		name: 'Qui suis-je ?',
 		url: '#praticienne',
 	},
 	{
